@@ -66,5 +66,5 @@ public class EnemySpawnerScript : MonoBehaviour {
 
 	}
 
-	//適当
+
 }
