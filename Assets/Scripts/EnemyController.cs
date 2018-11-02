@@ -39,6 +39,8 @@ public class EnemyController : MonoBehaviour {
 			enemyBulletTimer = 0;//タイマーを初期化！
 			iCanShoot = true;
 		}
+
+
 		//===========================================
 		//【Enemyの進行に関するコード】
 		this.gameObject.transform.position += new Vector3 (0, -enemySpeed * Time.deltaTime, 0);

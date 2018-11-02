@@ -14,6 +14,7 @@ public class AdvancedBulletScript : MonoBehaviour {
 	void Start () {
 		rb = GetComponent<Rigidbody> ();//Rigidbodyコンポーネント取得！
 		player = GameObject.Find ("Player");//Player見つけてきて変数playerに格納
+
 		if(player != null)
 		{
 			targetPosition = (player.transform.position - this.transform.position).normalized;//bulletを飛ばす方向ベクトルを取得→正規化(単位ベクトル化)

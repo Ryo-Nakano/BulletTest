@@ -10,8 +10,6 @@ public class GameManagerScript : MonoBehaviour {
 	public int score;
 	[SerializeField] Text scoreText;//スコア表示！
 
-	float timer;
-
 	// Use this for initialization
 	void Start () {
 		
@@ -23,7 +21,6 @@ public class GameManagerScript : MonoBehaviour {
 		scoreText.text = "Score :" + score.ToString ();//スコア表示！
 
 		if(player.gameObject == null){//PlayerがDestroyされた時
-			timer += Time.deltaTime;
 
 			PlayerPrefs.SetInt("LastScore", score);//scoreの値をLastScoreの名前で保存！
 			SceneManager.LoadScene("GameOver");//GameOverシーンへ移動

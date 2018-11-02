@@ -23,7 +23,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 		for(int i = 0; i < 8; i++)//8回回す
 		{
 			enemyType = Random.Range (1,4);
-			EnemySpawn(enemyType);//Enemy生成
+			EnemySpawn(enemyType);//Enemy生成=======================================
 		}
 	}
 	
@@ -37,7 +37,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 			for(int i = 0; i < 2; i++)
 			{
 				enemyType = Random.Range (1,4);
-				EnemySpawn (enemyType);//Enemy生成
+				EnemySpawn (enemyType);//Enemy生成===========================================
 			}
 			enemySpawnTimer = Random.Range (0,1.5f);
 		}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+
 	[SerializeField] float speed;
 	[SerializeField] GameObject playerBullet;
 
@@ -11,21 +12,21 @@ public class PlayerController : MonoBehaviour {
 
 	float bulletTimer;
 	[SerializeField] float bulletInterval;//bullatを撃つインターバルを変更する変数
-	bool iCanAttack = true;//攻撃できるかどうかを司る変数！
+	//bool iCanAttack = true;//攻撃できるかどうかを司る変数！
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
+
 	void Update () {
 
-		//======================================================================================
+		Move ();//Playerの移動
+		Shoot();//Playerが弾を打つ関数
+	}
 
-		//【自機の移動】
 
-		//左キー押した時左に移動
+    //===============以下、自作関数===============
+
+    //Playerの移動を司る関数
+	void Move()
+	{
 		if(Input.GetKey("left") == true)
 		{
 			if(this.transform.position.x > -15)
@@ -41,25 +42,22 @@ public class PlayerController : MonoBehaviour {
 				this.gameObject.transform.position += new Vector3 (speed * Time.deltaTime, 0, 0);
 			}
 		}
+	}
 
-		//======================================================================================
-
-		//【弾発射のコード】
-
+    //Playerが弾を打つ関数
+	void Shoot()
+	{
 		bulletTimer += Time.deltaTime;//bulletTimerスタート！
 
-		//スペースキー押した時弾発射
-		if(Input.GetKey("space") == true)
-		{
-			if(bulletTimer >= bulletInterval)
-			{
-				Instantiate (playerBullet, this.transform.position + bulletPosition, Quaternion.identity);
+        //スペースキー押した時弾発射
+        if (Input.GetKey("space") == true)
+        {
+            if (bulletTimer >= bulletInterval)
+            {
+                Instantiate(playerBullet, this.transform.position + bulletPosition, Quaternion.identity);
 
-				bulletTimer = 0;//bulletTimerの初期化！
-
-			}
-
-		}
-			
+                bulletTimer = 0;//bulletTimerの初期化！
+            }
+        }
 	}
 }

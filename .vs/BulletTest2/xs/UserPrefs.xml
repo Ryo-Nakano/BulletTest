@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{4B81E949-857B-FC7F-12EE-237FB3E61687}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemySpawnerScript.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerBulletScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="15" Column="44" />
+      <File FileName="Assets/Scripts/EnemySpawnerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemyController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AdvancedBulletScript.cs" Line="27" Column="3" />
+      <File FileName="../GameAI-Test/Assets/Scripts/BurrelController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManagerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemyBulletScript.cs" Line="1" Column="1" />
+      <File FileName="../GameAI-Test/Assets/Scripts/EnemyController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AdvancedEnemyController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HomingBulletScript.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
